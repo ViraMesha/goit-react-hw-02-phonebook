@@ -22,7 +22,6 @@ export const ContactDeleteBtn = styled.button`
   cursor: pointer;
   align-self: center;
   transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
-
   &:hover,
   &:focus {
     color: #4d4ae8;
