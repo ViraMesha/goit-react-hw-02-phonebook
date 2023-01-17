@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ContactListItem } from 'components/ContactListItem/ContactlistItem';
+import { ContactListItem } from 'components/ContactListItem/ContactListItem';
 import { ContactsList } from './ContactList.styled';
 export const ContactList = ({ contacts, onDelete }) => {
   return (
@@ -9,8 +9,7 @@ export const ContactList = ({ contacts, onDelete }) => {
           key={id}
           name={name}
           number={number}
-          onDelete={onDelete}
-          id={id}
+          onDelete={() => onDelete(id)}
         />
       ))}
     </ContactsList>
